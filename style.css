@@ -92,15 +92,38 @@ p {
 main {
   display: grid;
   place-items: center;
-  height: 100dvh;
+  min-height: 100dvh;
 }
 
-/* Center */
+/* Grid */
 .main-wrapper {
   display: grid;
   min-height: 80dvh;
   width: 80%;
   grid-template-rows: repeat(3, minmax(min-content, 1fr));
+}
+
+@media screen and (min-width: 659px) {
+  .main-wrapper {
+    grid-template-areas:
+      "heading heading"
+      "subscription why";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(min-content, 1fr));
+    max-width: 800px;
+    max-height: 800px;
+  }
+  .heading {
+    grid-area: heading;
+  }
+
+  .subscription {
+    grid-area: subscription;
+  }
+
+  #why {
+    grid-area: why;
+  }
 }
 
 /* Background Colors */
