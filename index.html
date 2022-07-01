@@ -13,7 +13,13 @@
     />
 
     <title>Price Grid</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <style>
       .attribution {
         font-size: 11px;
@@ -24,7 +30,7 @@
   <body>
     <main>
       <section id="cta">
-        <h1 class="cyan">Join our community</h1>
+        <h1>Join our community</h1>
         <strong> 30-day, hassle-free money back guarantee </strong>
         <p>
           Gain access to our full library of tutorials along with expert code
@@ -34,14 +40,16 @@
       </section>
       <section class="subscription">
         <h2>Monthly Subscription</h2>
-        <span class="price"> &dollar;29 </span>
-        <span class="light per-month"> per month </span>
+        <div>
+          <span class="price"> &dollar;29 </span>
+          <span class="per-month"> per month </span>
+        </div>
         <span> Full access for less than &dollar;1 a day </span>
-        <a> Sign Up </a>
+        <a class="button"> Sign Up </a>
       </section>
       <section id="why">
         <h2>Why Us</h2>
-        <ul>
+        <ul role="list">
           <li><a class="reason"> Tutorials by industry experts </a></li>
           <li><a class="reason"> Peer &amp; expert code review </a></li>
           <li><a class="reason"> Coding exercises </a></li>

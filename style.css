@@ -1,3 +1,9 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -44,4 +50,41 @@ a:not([class]) {
   html:focus-within {
     scroll-behavior: auto;
   }
+}
+
+/* Typography */
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 1.1rem;
+  color: var(--light-gray);
+  background-color: black;
+}
+
+h1,
+h2,
+strong,
+.price {
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-size: 1.6rem;
+}
+
+h1 {
+  color: var(--cyan);
+}
+
+strong {
+  color: var(--bright-yellow);
+}
+
+p,
+.per-month {
+  color: var(--grayish-blue);
+}
+
+.price {
+    font-size: 2em;
 }
