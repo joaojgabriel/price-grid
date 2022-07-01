@@ -79,8 +79,7 @@ strong {
   color: var(--bright-yellow);
 }
 
-p,
-.per-month {
+p {
   color: var(--grayish-blue);
 }
 
