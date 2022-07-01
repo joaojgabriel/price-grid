@@ -57,6 +57,7 @@ body {
   font-family: "Karla", sans-serif;
   font-size: 1.6rem;
   color: var(--light-gray);
+  background-color: var(--light-gray);
 }
 
 h1,
@@ -92,7 +93,6 @@ main {
   display: grid;
   place-items: center;
   height: 100dvh;
-  background-color: var(--light-gray);
 }
 
 /* Center */
@@ -100,7 +100,7 @@ main {
   display: grid;
   height: 80dvh;
   width: 80%;
-  grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  grid-template-rows: repeat(3,  1fr);
 }
 
 /* Background Colors */
@@ -114,4 +114,20 @@ main {
 
 #why {
   background-color: hsl(179, 62%, 47%);
+}
+main section {
+  display: grid;
+  place-items: center;
+  height: 100%;
+}
+
+main section > * {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  justify-content: space-between;
+}
+
+main section ul {
+  padding: 0;
 }
