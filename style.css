@@ -55,7 +55,7 @@ a:not([class]) {
 /* Typography */
 body {
   font-family: "Karla", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   color: var(--light-gray);
 }
 
@@ -68,7 +68,7 @@ strong,
 
 h1,
 h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 h1 {
