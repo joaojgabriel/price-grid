@@ -100,7 +100,7 @@ main {
   display: grid;
   height: 80dvh;
   width: 80%;
-  grid-template-rows: repeat(3,  1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 
 /* Background Colors */
@@ -118,15 +118,15 @@ main {
 
 /* Center content */
 main section {
+  grid-row: span 1;
   display: grid;
   place-items: center;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  max-width: 80%;
-  justify-content: space-between;
+  display: grid;
+  gap: 1rem;
+  max-width: 90%;
 }
 
 .content ul {
@@ -141,4 +141,16 @@ main section {
 
 .price {
   padding-right: 1rem;
+}
+
+/* Button */
+.button {
+  background-color: var(--bright-yellow);
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
 }
