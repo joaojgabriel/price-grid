@@ -115,19 +115,30 @@ main {
 #why {
   background-color: hsl(179, 62%, 47%);
 }
+
+/* Center content */
 main section {
   display: grid;
   place-items: center;
-  height: 100%;
 }
 
-main section > * {
+.content {
   display: flex;
   flex-direction: column;
   max-width: 80%;
   justify-content: space-between;
 }
 
-main section ul {
+.content ul {
   padding: 0;
+}
+
+/* Subscription price align */
+.subscription .content div {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  padding-right: 1rem;
 }
