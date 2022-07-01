@@ -96,3 +96,23 @@ main {
     background-color: var(--light-gray);
 }
 
+/* Center */
+.main-wrapper {
+    display: grid;
+    height: 80dvh;
+    width: 80%;
+    grid-template-rows: repeat(3, minmax(min-content, 1fr));
+}
+
+/* Background Colors */
+#heading {
+    background-color: white;
+}
+
+.subscription {
+    background-color: hsl(179, 62%, 43%);
+}
+
+#why {
+    background-color: hsl(179, 62%, 47%);
+}
