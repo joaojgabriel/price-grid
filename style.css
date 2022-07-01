@@ -100,7 +100,7 @@ main {
   display: grid;
   height: 80dvh;
   width: 80%;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(min-content, 1fr));    
 }
 
 /* Background Colors */
