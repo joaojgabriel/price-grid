@@ -85,34 +85,34 @@ p,
 }
 
 .price {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 /* Main */
 main {
-    display: grid;
-    place-items: center;
-    height: 100dvh;
-    background-color: var(--light-gray);
+  display: grid;
+  place-items: center;
+  height: 100dvh;
+  background-color: var(--light-gray);
 }
 
 /* Center */
 .main-wrapper {
-    display: grid;
-    height: 80dvh;
-    width: 80%;
-    grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  display: grid;
+  height: 80dvh;
+  width: 80%;
+  grid-template-rows: repeat(3, minmax(min-content, 1fr));
 }
 
 /* Background Colors */
 #heading {
-    background-color: white;
+  background-color: white;
 }
 
 .subscription {
-    background-color: hsl(179, 62%, 43%);
+  background-color: hsl(179, 62%, 43%);
 }
 
 #why {
-    background-color: hsl(179, 62%, 47%);
+  background-color: hsl(179, 62%, 47%);
 }
