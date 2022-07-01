@@ -177,3 +177,7 @@ main section {
   font-weight: bold;
   margin-top: 1rem;
 }
+
+.button:hover {
+  background-color: hsl(71, 73%, 54%);
+}
