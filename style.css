@@ -87,3 +87,11 @@ p,
 .price {
     font-size: 2em;
 }
+
+/* Main */
+main {
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+    background-color: var(--light-gray);
+}
