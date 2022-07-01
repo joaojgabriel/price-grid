@@ -102,6 +102,13 @@ main {
   width: 80%;
   grid-template-rows: repeat(3, minmax(min-content, 1fr));
 }
+.main-wrapper section:first-child {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.main-wrapper section:last-child {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
 
 @media screen and (min-width: 659px) {
   .main-wrapper {
@@ -119,10 +126,12 @@ main {
 
   .subscription {
     grid-area: subscription;
+    border-radius: 0 0 0 0.5rem;
   }
 
   #why {
     grid-area: why;
+    border-radius: 0 0 0.5rem 0;
   }
 }
 
