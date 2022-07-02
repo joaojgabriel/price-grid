@@ -83,6 +83,15 @@ p {
   font-size: 2em;
 }
 
+@media screen and (min-width: 764px) {
+  .heading {
+    font-size: 1.2em;
+  }
+
+  .heading h1 {
+    font-size: 1.5em;
+  }
+}
 /* Main */
 main {
   display: flex;
@@ -132,12 +141,7 @@ main {
 
   .heading {
     padding: 10%;
-    font-size: 1.2em;
     grid-area: heading;
-  }
-
-  .heading h1 {
-    font-size: 1.5em;
   }
 
   .subscription {
