@@ -24,11 +24,6 @@ p {
   margin: 0;
 }
 
-/* Remove list styles on ul elements with a list role, which suggests default styling will be removed */
-ul[role="list"] {
-  list-style: none;
-}
-
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -90,38 +85,58 @@ p {
 
 /* Main */
 main {
-  display: grid;
-  place-items: center;
-  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 /* Grid */
-.main-wrapper {
+.grid {
   display: grid;
-  min-height: 80dvh;
+  min-height: 80vh;
   width: 80%;
-  grid-template-rows: repeat(3, minmax(min-content, 1fr));
+  grid-template-rows: repeat(3, 1fr);
 }
-.main-wrapper section:first-child {
+
+.grid > * {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10%;
+}
+
+.heading {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.main-wrapper section:last-child {
+.information {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
-@media screen and (min-width: 659px) {
-  .main-wrapper {
+@media screen and (min-width: 764px) {
+  .grid {
     grid-template-areas:
       "heading heading"
-      "subscription why";
+      "subscription information";
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, minmax(min-content, 1fr));
-    max-width: 800px;
-    max-height: 800px;
+    max-width: 700px;
+    max-height: 600px;
   }
+  .grid > * {
+    padding: 15% 2em;
+  }
+  
   .heading {
+    padding: 10%;
+    font-size: 1.2em;
     grid-area: heading;
+  }
+
+  .heading h1 {
+    font-size: 1.5em;
   }
 
   .subscription {
@@ -129,8 +144,8 @@ main {
     border-radius: 0 0 0 0.5rem;
   }
 
-  #why {
-    grid-area: why;
+  .grid .information {
+    grid-area: information;
     border-radius: 0 0 0.5rem 0;
   }
 }
@@ -144,25 +159,8 @@ main {
   background-color: hsl(179, 62%, 43%);
 }
 
-#why {
+.information {
   background-color: hsl(179, 62%, 47%);
-}
-
-/* Center content */
-main section {
-  grid-row: span 1;
-  display: grid;
-  place-items: center;
-}
-
-.content {
-  display: grid;
-  gap: 1rem;
-  max-width: 90%;
-}
-
-.content ul {
-  padding: 0;
 }
 
 /* Subscription price align */
